@@ -1,18 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nuance</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/png" href="favicon.ico">
-    </head>
-    <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.ico">
+</head>
+
+<body>
+    <div id="menu">
+        <img src="assets/nuance-full.png" height="35">
+        <a>Features</a>
+        <a>Pricing</a>
+    </div>
+    <div class="panel">
+        <img src="assets/welcome.png" height="500" id="welcome" style="margin-top: 50px;">
+        <div class="break"></div>
+        <h1>End procrastination.<span> Once and for all.</span></h1>
+    </div>
+    <div class="panel">
+        <img src="assets/welcome.png" height="500">
         <div>
-            <img src="nuance-full.png">
+            <h1><span>Tasks? </span><mark>Nuance has got that covered.</mark></h1>
+            <!-- <p>Whether you're buying milk or completing your taxes, there's a better way to get things done. Write down a task, set a due date, and AI </p> -->
         </div>
+    </div>
+    <div class="panel">
         <div>
-            <h1></h1>
+            <h1><span>Habits? </span><mark>You bet.</mark></h1>
         </div>
-    </body>
+        <img src="assets/welcome.png" height="500">
+    </div>
+    <div class="panel">
+        <img src="assets/welcome.png" height="500">
+        <div>
+            <h1><span>Goals? </span><mark>That too.</mark></h1>
+        </div>
+    </div>
+</body>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script>
+    const lenis = new Lenis()
+
+    function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+</script>
+
 </html>
