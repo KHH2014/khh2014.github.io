@@ -48,31 +48,24 @@ p{
 }
 
 .panel{
-    padding: 16px;
-    height: 750px;
+    margin-bottom: 200px;
+    padding: 48px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     align-items: center;
-    border: 1px solid rgb(50, 50, 50);
 }
 
 .panel>div{
-    width: 550px;
-    text-wrap: inherit;
+    width: 40em;
 }
 
-.panel>img{
+.panel>div>img{
     border-radius: 20px;
     box-shadow: 0px 0px 200px #a827b7;
+    width: 40em;
+    margin-top: 20px;
 }
 
 .break{
     flex-basis: 100%;
 }
-
-.highlight{
-    /* color: black;
-    background-color: yellow; */
-}
-
