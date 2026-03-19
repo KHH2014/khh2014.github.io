@@ -1,80 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
-body{
-    font-family: "Inter";
-    background-color: black;
-    color: white;
-    scroll-behavior: smooth;
+body {
+  font-family: "Inter";
+  background-color: black;
+  color: white;
+  margin: 0;
 }
 
-span{
-    font-family: "Playfair Display";
-    font-style: italic;
-    font-weight: 200;
+span {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 200;
 }
 
-p{
-    font-family: monospace;
-    font-size: larger;
+p {
+  font-family: monospace;
+  font-size: larger;
 }
 
-#menu{
-    padding: 12px 20px;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    /* From https://css.glass */
-    background: rgba(35, 35, 35, 0.8);
-    border-radius: 20px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(20px); 
+#menu {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 24px;
+  /* From https://css.glass */
+  background: rgba(35, 35, 35, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
 }
 
-#menu>*{
-    padding: 0px 10px;
-    color: rgb(169, 169, 169);
-    transition: 0.3s;
+#menu > * {
+  padding: 0px 10px;
+  color: rgb(169, 169, 169);
+  transition: 0.3s;
 }
 
-#menu>*:hover{
-    color: rgb(255, 255, 255);
-    cursor: pointer;
+#menu > *:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
-#welcome{
-    box-shadow: 0px 0px 200px #a827b7;
-    border-radius: 32px;
+#welcome {
+  box-shadow: 0px 0px 200px #a827b7;
+  border-radius: 32px;
 }
 
-.panel{
-    margin-bottom: 200px;
-    padding: 48px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+.panel {
+  scroll-snap-align: center;
+  display: flex;
+  border: rgb(51, 51, 51) 1px solid;
+  margin-bottom: 200px;
+  justify-content: center;
+  align-items: center;
 }
 
-.panel>div{
-    width: 640px;
+.panel > article {
+  box-sizing: border-box;
+  padding: 0 72px;
 }
 
-.panel>div>img{
-    border-radius: 20px;
-    box-shadow: 0px 0px 200px #a827b7;
-    width: 640px;
-    margin-top: 20px;
+.panel > img:not(:first-child) {
+  width: 40dvw;
+  height: 40dvh;
+  flex-shrink: 0;
+  object-fit: cover;
 }
 
-.break{
-    flex-basis: 100%;
+.break {
+  flex-basis: 100%;
 }
 
 @media (max-width: 700px) {
-    .panel>div{
-        width: 100%;
-    }
-    .panel>div>img{
-        width: 100%;
-    }
+  .panel > div {
+    width: 100%;
+  }
+  .panel > div > img {
+    width: 100%;
+  }
 }
