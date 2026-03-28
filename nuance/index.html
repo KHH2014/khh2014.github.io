@@ -1,77 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nuance</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="assets/favicon.ico">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="assets/favicon.ico" />
+  </head>
 
-<body>
-    <div id="menu">
-        <img src="assets/nuance-full.png" height="35">
-        <a>Features</a>
-        <a>Pricing</a>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
-            viewBox="0 0 16 16">
+  <body>
+    <div id="menu-parent">
+      <div id="menu">
+        <img src="assets/favicon.ico" height="35" />
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="https://github.com/KHH2014/khh2014.github.io" style="height: 16px;"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-github"
+            viewBox="0 0 16 16"
+          >
             <path
-                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-        </svg>
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+            /></svg
+        ></a>
+      </div>
     </div>
-    <div id="scroll-container"
-        style="height: 100vh; overflow-y: auto; scroll-snap-type: y mandatory; scrollbar-width: none;">
-        <section>
-            <div class="panel" style="flex-wrap: wrap; height: 100dvh;">
-                <img src="assets/welcome.png" height="500" id="welcome">
-                <div class="break"></div>
-                <h1>End procrastination.<span> Once and for all.</span></h1>
-            </div>
-        </section>
-        <section id="features">
-            <div class="panel">
-                <article>
-                    <h1><span>Tasks? </span><mark>Nuance's got that covered.</mark></h1>
-                    <p>Whether you're buying milk or filing your taxes, there's a better way to get things done. This
-                        isn't
-                        just
-                        a list, it's a task-completing companion that learns from you. Nuance looks at all of your tasks
-                        and
-                        estimates the time needed to complete each one, comparing previous times and adjusting for your
-                        pace.
-                        Set a due date, and Nuance will nudge you if you need to get back on track.</p>
-                </article>
-                <img src="assets/task.png">
-            </div>
-            <div class="panel" style="flex-direction: row-reverse;">
-                <article>
-                    <h1><span>Projects? </span><mark>Nuance can handle those too.</mark></h1>
-                    <p>Whether you're planning a trip or launching a startup, Nuance's project management tools are
-                        designed
-                        to
-                        keep you organized and on track. Nuance helps you break down your big goals into manageable
-                        tasks,
-                        set deadlines, and
-                        stay focused and motivated every step of the way.</p>
-                </article>
-                <img src="assets/goal.png">
-            </div>
-            <div class="panel" style="justify-content: left;">
-                <article>
-                    <h1><span>Habits? </span><mark>You bet.</mark></h1>
-                    <p>Whether you're trying to quit doomscrolling or develop a daily meditation routine, Nuance's
-                        habit-tracking
-                        features are designed to help you build positive routines and break negative ones. Set your
-                        goals,
-                        track
-                        your progress, and let Nuance motivate you to stay on course.</p>
-                </article>
-                <img src="assets/habit.png">
-            </div>
-        </section>
+    <div id="scroll-container">
+      <section id="intro">
+        <div>
+          <img src="assets/welcome.png" height="500" id="welcome" />
+          <div class="break"></div>
+          <h1>End procrastination.<span> Once and for all.</span></h1>
+        </div>
+      </section>
+      <section id="features">
+        <div>
+          <article>
+            <h1><span>Tasks? </span><mark>Nuance's got that covered.</mark></h1>
+            <p>
+              Whether you're buying milk or filing your taxes, there's a better
+              way to get things done. This isn't just a list, it's a
+              task-completing companion that learns from you. Nuance looks at
+              all of your tasks and estimates the time needed to complete each
+              one, comparing previous times and adjusting for your pace. Set a
+              due date, and Nuance will nudge you if you need to get back on
+              track.
+            </p>
+          </article>
+          <img src="assets/task.png" />
+        </div>
+        <div style="flex-direction: row-reverse">
+          <article>
+            <h1>
+              <span>Projects? </span><mark>Nuance can handle those too.</mark>
+            </h1>
+            <p>
+              Whether you're planning a trip or launching a startup, Nuance's
+              project management tools are designed to keep you organized and on
+              track. Nuance helps you break down your big goals into manageable
+              tasks, set deadlines, and stay focused and motivated every step of
+              the way.
+            </p>
+          </article>
+          <img src="assets/goal.png" />
+        </div>
+        <div style="justify-content: left">
+          <article>
+            <h1><span>Habits? </span><mark>You bet.</mark></h1>
+            <p>
+              Whether you're trying to quit doomscrolling or develop a daily
+              meditation routine, Nuance's habit-tracking features are designed
+              to help you build positive routines and break negative ones. Set
+              your goals, track your progress, and let Nuance motivate you to
+              stay on course.
+            </p>
+          </article>
+          <img src="assets/habit.png" />
+        </div>
+      </section>
+      <section id="pricing">
+        <div>
+          <h1><span>How much does it cost?</span></h1>
+          <h1 id="price">0$</h1>
+          <p>
+            What are you waiting for? Stop procrastinating. Download Nuance
+            today.
+          </p>
+        </div>
+      </section>
     </div>
-</body>
-<script src="simple-scrollspy.min.js"></script>
-
+  </body>
 </html>
