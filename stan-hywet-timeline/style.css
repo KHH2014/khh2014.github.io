@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 hr{
     width: 0.2em;
     height: 1000px;
@@ -6,7 +7,7 @@ hr{
 }
 html{
     margin-top: -8px;
-
+    font-family: "Open Sans";
 }
 button{
     background-color: white;
@@ -23,5 +24,6 @@ button{
 div{   
     position: absolute;
     top: 100px;
-    left: 80%;
+    left: 65%;
+    transform: translate(-50%, -50%);
 }
