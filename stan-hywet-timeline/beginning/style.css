@@ -7,7 +7,11 @@ html{
 h1{
     font-family: "Alegreya";
 }
-img{
+img, p{
     width: 500px;
     max-width: 85%;
+}
+p{
+    text-align: left;
+    margin: 0;
 }
