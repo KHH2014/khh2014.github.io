@@ -1,17 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 html{
-    font-family: "Inter";
-    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
+.flex{
+    display: flex;
+    justify-content: center;
+}
+.flex>*{
+    width: 17%;
+    aspect-ratio: 1/1;
+    height: auto;
+    padding: 24px;
+    margin: 0;
+}
+.flex>*:nth-child(odd){
+    background-color: black;
+    color: white;
+}
 h1{
     font-family: "Alegreya";
 }
-img, p{
-    width: 500px;
-    max-width: 85%;
-}
-p{
-    text-align: left;
-    margin: 0;
+img{
+    width: 60%;
+    text-align: center;
 }
