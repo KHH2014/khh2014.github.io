@@ -16,19 +16,26 @@ html{
     margin: 0;
     border-radius: 16px;
 }
-.flex:nth-child(odd)>p:nth-child(odd){
+.odd>p:nth-child(odd){
     background-color: black;
     color: white;
 }
-.flex:nth-child(even)>p:nth-child(even){
+.even>p:nth-child(even){
     background-color: black;
     color: white;
 }
-.flex:not(:nth-last-of-type(-n+2))>*{
-    opacity: 50%;
+.button{
+    background-color: white;
+    position: sticky;
+    top: 0%;
+    padding: 16px;
+}
+#main {
+  scroll-margin-top: 100px;
 }
 h1{
     font-family: "Alegreya";
+    text-align: center;
 }
 img{
     width: 50%;
