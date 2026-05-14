@@ -35,14 +35,14 @@ body{
     border-radius: 16px;
 }
 #main {
-    scroll-margin-top: 124px;
+    scroll-margin-top: 118px;
 }
 h1{
     font-family: "Alegreya";
     text-align: center;
 }
 img{
-    width: 50%;
+    height: 500px;
     border-radius: 16px;
     display: block;
     margin-left: auto;
