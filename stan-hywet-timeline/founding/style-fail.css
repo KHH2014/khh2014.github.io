@@ -1,0 +1,15 @@
+.flex {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+  grid-template-areas:
+    "header"
+    "button1";
+  grid-template-rows: min-content auto;
+}
+h1 {
+  text-align: center;
+  grid-area: header;
+}

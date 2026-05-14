@@ -36,20 +36,30 @@ a {
   margin: 24px;
 }
 img {
-  min-width: 400px;
   width: 50%;
-  max-width: 100%;
+  max-width: 600px;
+  height: auto;
   grid-area: image;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  object-fit: contain;
+}
+
+img[src="akron.jpg"],
+img[src="goodyear.jpg"] {
+  max-width: 800px;
+}
+
+img[src="goodyear-bike-tire.jpg"] {
+  max-width: 400px;
 }
 button {
   /* Variables */
   --button_radius: 0.75em;
   --button_color: #e8e8e8;
   --button_outline_color: #000000;
-  font-size: 17px;
+  font-size: larger;
   font-weight: bold;
   font-family: "Inter";
   border: none;
@@ -88,5 +98,8 @@ button:active .button_top {
   }
   .flex {
     padding: 12px;
+  }
+  button {
+    font-size: medium;
   }
 }
