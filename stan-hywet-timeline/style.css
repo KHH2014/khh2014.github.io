@@ -44,3 +44,46 @@ div{
     left: 40%;
     transform: translate(-100%, -40px);
 }
+#opening-button{
+    top: 700px;
+    left: 50%;
+}
+#opening-div{
+    top: 700px;
+    left: 60%;
+}
+@media (max-width: 768px) {
+    div{
+        max-width: 70%;
+    }
+    hr{
+        position: absolute;
+        left: 10%;
+        transform: translate(-50%, 0%);
+    }
+    #beginning-button{
+        top: 100px;
+        left: 10%;
+    }
+    #beginning-div{
+        top: 100px;
+        left: 20%;
+    }
+    #founding-button{
+        top: 400px;
+        left: 10%;
+    }
+    #founding-div{
+        top: 400px;
+        left: 20%;
+        transform: translate(0%, -40px);
+    }
+    #opening-button{
+        top: 700px;
+        left: 10%;
+    }
+    #opening-div{
+        top: 700px;
+        left: 20%;
+    }
+}

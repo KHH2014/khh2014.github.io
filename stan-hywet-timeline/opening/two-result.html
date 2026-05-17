@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 2 - Result</title>
+    <style>
+      .wrong-answer {
+        background-color: #ffcccc;
+        border: 3px solid #cc0000;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px;
+      }
+      .answer-label {
+        color: #cc0000;
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+      .redirect-notice {
+        color: #cc0000;
+        font-size: 0.9em;
+        margin-top: 15px;
+        text-align: center;
+      }
+      h2 {
+        font-size: clamp(1.2rem, 4vw, 1.8rem);
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <div class="menubar">
+      <a href="one.html#main">
+        <button>
+          <span class="button_top">Back</span>
+        </button>
+      </a>
+    </div>
+    <div class="wrong-answer">
+      <p class="answer-label">✗ Incorrect</p>
+      <h2>
+        This type of lighting was invented in 1936, so it didn't exist at that
+        time.
+      </h2>
+      <img
+        src="flourescent-lighting.png"
+       
+      />
+      <p class="redirect-notice">
+        Continuing to next question in <span id="timer">5</span> seconds...
+      </p>
+    </div>
+    <script>
+      let countdown = 5;
+      const timerElement = document.getElementById("timer");
+
+      const interval = setInterval(() => {
+        countdown--;
+        timerElement.textContent = countdown;
+
+        if (countdown <= 0) {
+          clearInterval(interval);
+          window.location.href = "three.html";
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>

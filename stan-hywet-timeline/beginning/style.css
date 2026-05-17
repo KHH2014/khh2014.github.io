@@ -1,52 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Inter:ital,wght@0,300..800;1,300..800&display=swap');
-html{
-    scroll-behavior: smooth;
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Inter:ital,wght@0,300..800;1,300..800&display=swap");
+html {
+  scroll-behavior: smooth;
 }
-body{
-    font-family: "Alegreya";
-    background-color: bisque;
+body {
+  font-family: "Alegreya";
+  background-color: bisque;
 }
-.flex{
-    display: flex;
-    justify-content: space-between;
-    margin: 24px;
+.flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px;
 }
-.flex>p{
-    width: 17%;
-    aspect-ratio: 1/1;
-    height: auto;
-    padding: 24px;
-    margin: 0;
-    border-radius: 16px;
+.flex > p {
+  width: 17%;
+  aspect-ratio: 1/1;
+  height: auto;
+  padding: 24px;
+  margin: 0;
+  border-radius: 16px;
 }
-.odd>p:nth-child(odd){
-    background-color: black;
-    color: white;
+.odd > p:nth-child(odd) {
+  background-color: black;
+  color: white;
 }
-.even>p:nth-child(even){
-    background-color: black;
-    color: white;
+.even > p:nth-child(even) {
+  background-color: black;
+  color: white;
 }
-.button{
-    background-color: white;
-    position: sticky;
-    top: 16px;
-    padding: 16px;
-    border-radius: 16px;
+.button {
+  background-color: white;
+  position: sticky;
+  top: 16px;
+  padding: 16px;
+  border-radius: 16px;
 }
 #main {
-    scroll-margin-top: 118px;
+  scroll-margin-top: 118px;
 }
-h1{
-    font-family: "Alegreya";
-    text-align: center;
+h1 {
+  font-family: "Alegreya";
+  text-align: center;
 }
-img{
-    height: 500px;
-    border-radius: 16px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+img {
+  height: 500px;
+  border-radius: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 button {
   /* Variables */
@@ -84,4 +84,16 @@ button:hover .button_top {
 button:active .button_top {
   /* Push the button downwards when pressed */
   transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .flex > p {
+    width: 100%;
+  }
+  .flex {
+    flex-wrap: wrap;
+  }
+  img{
+    width: 85%;
+  }
 }

@@ -27,6 +27,7 @@ body {
 h2 {
   text-align: center;
   grid-area: header;
+  font-weight: normal;
 }
 a {
   display: flex;
@@ -92,6 +93,14 @@ button:active .button_top {
 }
 
 @media (max-width: 768px) {
+  .flex {
+    grid-template-areas:
+      "header"
+      "image"
+      "button1"
+      "button2";
+    grid-template-rows: min-content auto min-content min-content;
+  }
   img {
     min-width: 100%;
     width: 100%;
