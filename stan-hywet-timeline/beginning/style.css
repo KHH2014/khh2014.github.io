@@ -89,11 +89,13 @@ button:active .button_top {
 @media (max-width: 768px) {
   .flex > p {
     width: 100%;
+    aspect-ratio: auto;
   }
   .flex {
     flex-wrap: wrap;
   }
   img{
-    width: 85%;
+    width: 90%;
+    height: fit-content;
   }
 }
